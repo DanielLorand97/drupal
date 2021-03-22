@@ -9,14 +9,7 @@ api.api_controller_index:
 api.api_controller_addMovie:
   path: '/api/addMovie'
   defaults:
-    _controller: '\Drupal\api\Controller\ApiController::addMovie'
+    _controller: '\Drupal\api\Controller\ApiController::getResults'
     _title: 'addMovies'
-  requirements:
-    _permission: 'access content'
-api.api_controller_results:
-  path: '/api/results'
-  defaults:
-    _controller: '\Drupal\api\Controller\ApiController::results'
-    _title: 'getResults'
   requirements:
     _permission: 'access content'
